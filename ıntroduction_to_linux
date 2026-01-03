@@ -55,12 +55,84 @@ Linux Terminologly and Examples
 
 Kernel: Glue between hardware and applications form example: Linux kernel
 Distribution: Collection of software making up a Linux-based OS 
-Boot loader
-Service
-Filesystem
-X windows System
+Boot loader(ön yükleyici): program thats boots the operating system. for example: GRUB and ISOLINUX
+Service: program that runs as a baclground process.example httpd, ntpd, ftpd an named, 
+Filesystem: method for storing and organizing files
+X windows System: 
 Desktop Environment
 Command line
+shell : command line interpreter that interprets the command line input and instructs the operating system to perform any necessary tasks and command
+------------------------------------------------------------------------------------------------------------------
+
+applications <-------> Kernel <----------> CPU - Memory - Devices
+
+
+
+
+Services Associated(bağlantılı) with Distributions
+
+Linux Support and Services 
+1- Commercial(ticari) Suport and Servives 
+    a- Oracle
+    b- RHEL
+    c- SLES
+    d- ubuntu commercial support 
+
+2- Community Support and Services
+    a- CentOS
+    b- openSUSE
+    c- Ubuntu Community Support
+
+
+------------------------------------------------------------------
+
+CHAPTER SUMMARY
+* Linux borrows from UNIX
+* Linux access features(özellikler) through files
+* Linux is a multitasking OS
+* Terms: kernel, distribution, boot loader
+* Linux distro includes kernel and tools
+
+-----------------------------------------------------------------------------------
+
+CHAPTER 3
+
+LINUX BASICS AND SYSTEM STARTUP
+* Identify Lİnux filesystem
+* Identify differences: partitions vs filesystems
+* describe the boot process
+* Install linux on a computer
+
+
+BIOS : The first step
+ power on ------> BIOS (Basic input/ output system)-------------> initializes(başlatmak) the screen and keyboard and tests the main memory
+
+power on ----> BIOS ----->Master Boot Record(MBR) also known as first Sector of the hard disk----> Boot loader (e.g.GRUB)---> Kernel(Linux OS)---> Initial RAM disk-initramfs( çekirdeğe gömülü ve önyükleme sürecinin erken bir aşamasında yüklenen bir kök dosya sistemidir) image-----> /sbin/init(parent process)
+
+
+a- Master Boot Record (MBR) and Boot Loader
+
+MBR
+-> Partition(bölme)1 (Bootable-çalıştırılabilir)
+    searches for GRUB and loads it into RAM
+
+-> Partition 2
+
+-> Partition 3
+
+
+initramfs ---> programs and binary files
+                  * mount proper root filesystem
+                  * providing kernel functionally
+                  * locating devices
+                  *  locating drivers and load them  
+                  * checking for errors in root filesystem
+
+
+
+
+
+
 
 
 
