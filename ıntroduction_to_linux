@@ -134,6 +134,44 @@ initramfs ---> programs and binary files
 
 
 
+Filesystems supported by Linux
+-> Conventional disk filesystems(ext3, ext4, xfs, Btrfs, JFS, NTFS; vfat, etc
+-> Flash storage filesystems(ubifs, iffs2, yaffs, etc)
+-> Database filesystems
+-> Special purpose(amaç) filesystems(profcs, sysfs, tmpfs, squashfs, debugfs, etc)
+
+----------------------------------------------------------------------------------------
+
+Root directory of the entire file systems hierarchy
+/bin/ --> essential user command binaries
+/boot/ --> static files of the boot loader
+/dev/ --> device files
+/etc/ --> host-specific sysem configuration
+/home/ --> user home directories
+/lib/ --> essential(temel) shared(ortak) libraries and kernel modules
+/media/ --> mount point for removable(çıkarılabilir) media
+/mnt/ -->mount point for a temporarily(geçici olarak) mounted filesystems
+/opt/ --> add on application software packages
+/sbin/ --> system binaries
+/srv/ --> data for services provided by this system
+/tmp/ --> temporary files
+/usr/ --> (multi)-user utilities and applications 
+/var/ --> variable files
+/root/ --> home directory for the root user
+/proc/ --> virtual filesystem documenting kernel and process status as text files
+
+-------------------------------------------------------------------------------------------
+
+Partitions in the Lİnux HArd Disk
+
+  Linux Hard Disk(sda)
+    * /(sda1)
+    * home(sda2)
+    * var (sda3)
+    * swap(sda4)
+
+
+
 
 
 
