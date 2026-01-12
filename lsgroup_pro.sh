@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [[ $EUID -ne 0 ]]; then
-   echo "Please run with: sudo ./lsgroup_pro.sh"
-   exit 1
-fi
+#if [[ $EUID -ne 0 ]]; then
+ #  echo "Please run with: sudo ./lsgroup_pro.sh"
+  # exit 1
+#fi
 
 clear
 printf "%-15s | %-6s |%-20s\n" "GROUP NAME" "GID" "CREATION DATE"
